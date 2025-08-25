@@ -15,8 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
+# Хост проекта по умолчанию - 127.0.0.1:8000
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path() - встроенный метод в Django, для преобразования и получения пути из тела запроса
+    # path() имеет два обязательных аргумента: путь относительно хоста проекта и файл маршрутизации
+    # include() - встроенный метод в Django, для подключения файла маршрутизации (urls.py)
+    # include() - имеет один обязательный аргумент: путь до файла urls приложения в формате 'app_name.urls'
+    path('audith/', include('audith.urls')),
 ]
