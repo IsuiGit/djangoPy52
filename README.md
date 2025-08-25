@@ -12,3 +12,8 @@
 2. Выполните команду `django-admin startproject <your-project-name`;
 3. После выполнения команды из пунтка 2, в вашей папке с проектом будет создана папка `<your-project-name`. Зайдите в неё и выполните команду (`manage.py startapp <you-app-name>` cmd | `python manage.py startapp <you-app-name>` bash);
 4. Для проверки корректности создания проекта выполните команду (`manage.py runserver` cmd | `python manage.py runserver` bash).
+
+# ДЗ 2
+Выполнить шаги из cookboo Урок 1
+Прислать скриншот выполненной работы (из браузера)
+https://django.fun/docs/django/5.2/intro/tutorial01/
